@@ -4,20 +4,46 @@
 <!--     <img height="auto" width="auto" src="images/screenshot.png" /> -->
 <!-- </p> -->
 
-> [!NOTE]  
-> For educational purposes.
-
 ## Configuration for macOS 15 Sequoia
-
 
 > [!CAUTION]
 > I don't take any responsibility for you voilating the Apple ToS and/or damaging your device.
 
 ## Installation
 
+> [!IMPORTANT]  
+> This repository ships without kexts except for `UTBMap`. Run `./download-kexts.sh` to download them before using the EFI.
+
 ```
 PlatformInfo -> Generic -> Add Serial, SystemUUID and MLB for SMBIOS Macmini8,1
 ```
+
+## Updating Kexts
+
+Run the update script to download the latest kexts from their respective GitHub releases:
+
+```bash
+./download-kexts.sh
+```
+
+This will update the following kexts:
+
+| Kext | Source |
+|------|--------|
+| Lilu | [acidanthera/Lilu](https://github.com/acidanthera/Lilu) |
+| VirtualSMC | [acidanthera/VirtualSMC](https://github.com/acidanthera/VirtualSMC) |
+| AppleALC | [acidanthera/AppleALC](https://github.com/acidanthera/AppleALC) |
+| WhateverGreen | [acidanthera/WhateverGreen](https://github.com/acidanthera/WhateverGreen) |
+| IntelMausi | [acidanthera/IntelMausi](https://github.com/acidanthera/IntelMausi) |
+| NVMeFix | [acidanthera/NVMeFix](https://github.com/acidanthera/NVMeFix) |
+| IntelBluetoothFirmware | [OpenIntelWireless/IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware) |
+| IntelBTPatcher | [OpenIntelWireless/IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware) |
+| BlueToolFixup | [OpenIntelWireless/IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware) |
+| itlwm | [OpenIntelWireless/itlwm](https://github.com/OpenIntelWireless/itlwm) |
+| USBToolBox | [USBToolBox/kext](https://github.com/USBToolBox/kext) |
+
+> [!NOTE]
+> `UTBMap.kext` is machine-specific and will not be updated by the script.
 
 ## Base Specs
 
