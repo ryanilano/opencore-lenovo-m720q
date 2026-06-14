@@ -4,7 +4,7 @@
 <!--     <img height="auto" width="auto" src="images/screenshot.png" /> -->
 <!-- </p> -->
 
-## Configuration for macOS 15 Sequoia
+## Configuration for macOS 13 Ventura
 
 > [!CAUTION]
 > I don't take any responsibility for you voilating the Apple ToS and/or damaging your device.
@@ -28,26 +28,26 @@ Run the update script to download the latest kexts from their respective GitHub 
 
 This will update the following kexts:
 
-| Kext | Source |
-|------|--------|
-| Lilu | [acidanthera/Lilu](https://github.com/acidanthera/Lilu) |
-| VirtualSMC | [acidanthera/VirtualSMC](https://github.com/acidanthera/VirtualSMC) |
-| AppleALC | [acidanthera/AppleALC](https://github.com/acidanthera/AppleALC) |
-| WhateverGreen | [acidanthera/WhateverGreen](https://github.com/acidanthera/WhateverGreen) |
-| IntelMausi | [acidanthera/IntelMausi](https://github.com/acidanthera/IntelMausi) |
-| NVMeFix | [acidanthera/NVMeFix](https://github.com/acidanthera/NVMeFix) |
+| Kext                   | Source                                                                                                  |
+| ---------------------- | ------------------------------------------------------------------------------------------------------- |
+| Lilu                   | [acidanthera/Lilu](https://github.com/acidanthera/Lilu)                                                 |
+| VirtualSMC             | [acidanthera/VirtualSMC](https://github.com/acidanthera/VirtualSMC)                                     |
+| AppleALC               | [acidanthera/AppleALC](https://github.com/acidanthera/AppleALC)                                         |
+| WhateverGreen          | [acidanthera/WhateverGreen](https://github.com/acidanthera/WhateverGreen)                               |
+| IntelMausi             | [acidanthera/IntelMausi](https://github.com/acidanthera/IntelMausi)                                     |
+| NVMeFix                | [acidanthera/NVMeFix](https://github.com/acidanthera/NVMeFix)                                           |
 | IntelBluetoothFirmware | [OpenIntelWireless/IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware) |
-| IntelBTPatcher | [OpenIntelWireless/IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware) |
-| BlueToolFixup | [OpenIntelWireless/IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware) |
-| itlwm | [OpenIntelWireless/itlwm](https://github.com/OpenIntelWireless/itlwm) |
-| USBToolBox | [USBToolBox/kext](https://github.com/USBToolBox/kext) |
+| IntelBTPatcher         | [OpenIntelWireless/IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware) |
+| BlueToolFixup          | [OpenIntelWireless/IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware) |
+| itlwm                  | [OpenIntelWireless/itlwm](https://github.com/OpenIntelWireless/itlwm)                                   |
+| USBToolBox             | [USBToolBox/kext](https://github.com/USBToolBox/kext)                                                   |
 
 > [!NOTE]
 > `UTBMap.kext` is machine-specific and will not be updated by the script.
 
 ## Base Specs
 
-- CPU: i3-8100T
+- CPU: i5-8400T
 - GPU: Intel HD630 (DP, HDMI)
 - Motherboard: Intel B360
 - Audio Codec: ALC235
@@ -67,7 +67,7 @@ Configure SATA as - AHCI
 Hard-disk Pre Delay - Disabled
 ```
 
-## Limitations 
+## Limitations
 
 - No AirDrop support due to Intel WiFi (can be fixed by using _BCM_ card and _OCLP_).
 - No compatibility for software that requires T2 chip. Such as Apple Inteligence, iPhone Mirroring etc.
