@@ -2,6 +2,9 @@
 .contentFlavour
 .contentVisibility
 
+# Personal Claude Code instructions
+CLAUDE.local.md
+
 # Kexts (downloaded via update-kexts.sh)
 EFI/OC/Kexts/*
 !EFI/OC/Kexts/UTBMap.kext
